@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/sport.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="images/logo.png" rel="shortcut icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css" rel="stylesheet">
+    <title>KHANHUY - SPORTS</title>
+</head>
+
+<body onload="init()">
+    <div class="loading">
+        <div class="circle-loading"></div>
+    </div>
+    <div>
+        <a href="javascript:," id="gototop"><i class="fa-solid fa-angle-up"></i></a>
+
+    </div>
+    <section class="main">
+        <header>
+            <div class="ads-top">
+
+                <div class="user">
+                    <div>
+                        <p><i class="fa-solid fa-user"></i></p>
+                        <p class="user-infor"></p>
+                    </div>
+                    <a id="logout" href="#" style="display:block;color:black"><i
+                            class="fa-solid fa-right-from-bracket"></i></a>
+                </div>
+
+
+            </div>
+            <div class="ads-contents">
+                <div class="ads-content">
+                    <h1>FLASH SALE</h1>
+                    <h3>$1 a month for 12 months</h3>
+                    <h2>Ends soon</h2>
+                    <button class="header-button" type="submit">Subscribe Now</button>
+                    <h4>Already a subscriber? <a id="login" href="#">Login</a></h4>
+                </div>
+            </div>
+        </header>
+
+        <section class="nav">
+
+            <div class="ads-top-picture">
+                <img src="images/logo.png">
+            </div>
+            <ul class="menu">
+                <li><a class="active" href="#football">FOOTBALL</a></li>
+                <li><a href="#tennis">TENNIS</a></li>
+                <li><a href="#othersports">OTHER SPORTS</a></li>
+
+
+
+            </ul>
+            <div class="search-boxes">
+
+                <div class="box">
+
+                    <input list="list" id="search" class="input" type="text" placeholder="Search something">
+                    <a style="color:black;"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <ul id="list"></ul>
+
+            </div>
+
+        </section>
+        <h1 style="background-color:blue;color:white;padding:10px">FEATURES</h1>
+        <div id="football" class="tab-item">
+            <div class="first-contents">
+                <div class="first-content">
+                    <div class="first-content-info">
+                        <p style="color:red"><i class="fa-solid fa-bolt"></i>NEW</p>
+                        <h1>Manchester United will 'impress' under Erik ten Hag, says West Ham's Michail Antonio</h1>
+                        <p>Manchester United were the team every club looked forward to playing against at the end of
+                            the 2021/22 season</p>
+
+                    </div>
+                    <div class="first-content-pic">
+                        <div>
+                            <img src="images/GettyImages-1347909543-1.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="third-contents">
+                <div class="third-content">
+                    <div class="third-content-picture">
+                        <div>
+                            <img src="images/SoccerConcussion_THUMB.jpg">
+                        </div>
+                    </div>
+                    <h1>CTE Diagnosed in a Major League Soccer Player for the First Time</h1>
+                </div>
+                <div class="third-content">
+                    <div class="third-content-picture">
+                        <div>
+                            <img src="images/dpi11260359.webp">
+                        </div>
+                    </div>
+                    <h1>What's the Origin of the American Word 'Soccer'? Blame England</h1>
+                </div>
+                <div class="third-content">
+                    <div class="third-content-picture">
+                        <div>
+                            <img src="images/beitar-jerusalem-football-club-01-gty-jc-180514_hpMain_4x3_992.jpg">
+                        </div>
+                    </div>
+                    <h1>Israeli Soccer Team Renames Itself After Donald Trump</h1>
+                </div>
+            </div>
+
+
+
+
+            <div class="second-contents">
+
+                <div class="second-content2">
+                    <h1>Cristiano Ronaldo: Is Manchester United forward's time up at Old Trafford?</h1>
+
+                    <div>
+                        <img src="images/ronaldo.jpg">
+                    </div>
+                </div>
+                <div class="second-content1">
+                    <iframe width="894" height="503" src="https://www.youtube.com/embed/X_y23yqYzpg" title="" Cristiano
+                        Ronaldo is the Problem of Manchester United"" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subcontents">
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/wiegman.jpg">
+                        </div>
+                        <h5 style="background-color:aqua;color:white;display: inline-block;">EURO 2022 FINAL</h5>
+                        <h2>Wiegman dedicates England’s Euros win to memory of her sister</h2>
+                    </div>
+                </div>
+
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/victory.jpg">
+                        </div>
+                        <h5 style="background-color:aqua;color:white;display: inline-block;">EURO 2022 FINAL</h5>
+                        <h2>Victory kicks off jubilant scenes in land of hope and (finally) glory</h2>
+                    </div>
+                </div>
+
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/win.jpg">
+                        </div>
+                        <h5 style="background-color:aqua;color:white;display: inline-block;">EURO 2022 FINAL | GREGOR
+                            ROBERTSON</h5>
+                        <h2>No nasty chants or litter, only exuberance – this truly was the new Wembley</h2>
+                    </div>
+                </div>
+
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/kelly.jpg">
+                        </div>
+                        <h5 style="background-color:aqua;color:white;display: inline-block;">EURO 2022 FINAL</h5>
+                        <h2>Celebration was a nod to Kelly’s hero</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 style="background-color:crimson;color:white;padding:10px;">TOP PLAYERS</h1>
+            <div class="father-containers">
+                <div class="containers">
+                    <div class="container">
+                        <div class="slider">
+                            <figure class="slider-picture c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                                <!-- các nội dung liên quan mạch lạc với nhau -->
+                                <img src="images/ro.jpg">
+                                <figcaption class="c4-fade-up">
+                                    <h3>
+                                        CRISTIANO RONALDO
+                                    </h3>
+
+                            </figure>
+
+                            <figure class=" slider-picture c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                                <img src="images/messi.jpg">
+                                <figcaption class="c4-fade-up">
+                                    <h3>
+                                        LEO MESSI
+                                    </h3>
+
+                            </figure>
+                            <figure class=" slider-picture c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                                <img src="images/pele.jpg">
+                                <figcaption class="c4-fade-up">
+                                    <h3>
+                                        PELÉ
+                                    </h3>
+
+                            </figure>
+                            <figure class=" slider-picture c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                                <img src="images/dinho.jpg">
+                                <figcaption class="c4-fade-up">
+                                    <h3>
+                                        RONALDINHO
+                                    </h3>
+
+                            </figure>
+                            <figure class="slider-picture c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                                <img src="images/neymar.jpg">
+                                <figcaption class="c4-fade-up">
+                                    <h3>
+                                        NEYMAR
+                                    </h3>
+
+                            </figure>
+
+                        </div>
+
+                    </div>
+                    <div class="btns">
+                        <button class="btn1"></button>
+                        <button class="btn2"></button>
+                        <button class="btn3"></button>
+                        <button class="btn4"></button>
+                        <button class="btn5"></button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tennis" class="tab-item">
+            <div class="first-contents ">
+                <div class="first-content">
+                    <div class="first-content-info">
+                        <p style="color:red"><i class="fa-solid fa-bolt"></i>NEW</p>
+                        <h1>Marie Bouzkova eases past Anastasia Potapova to win Prague Open title</h1>
+                        <p>The Wimbledon quarterfinalist broke Potapova seven times to win the final in one hour and 11
+                            minutes. Bouzkova didn't drop a set during the hard-court tournament.</p>
+
+                    </div>
+                    <div class="first-content-pic">
+                        <div>
+                            <img src="images/2022-06-29t000000z_1_220701-180337_mim.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="third-contents ">
+                <div class="third-content">
+                    <div class="third-content-picture">
+                        <div>
+                            <img src="images/GettyImages-1241890341.webp">
+                        </div>
+                    </div>
+                    <h1>Novak Djokovic remains hopeful on US Open admission</h1>
+                </div>
+                <div class="third-content">
+                    <div class="third-content-picture">
+                        <div>
+                            <img src="images/i.jpg">
+                        </div>
+                    </div>
+                    <h1>Caroline Garcia wins Poland Open with straight-sets victory over Ana Bogdan</h1>
+                </div>
+                <div class="third-content">
+                    <div class="third-content-picture">
+                        <div>
+                            <img src="images/r1042661_1296x729_16-9.jpg">
+                        </div>
+                    </div>
+                    <h1>Ana Bogdan Wins The ITF Tournament In Bath</h1>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="second-contents">
+
+                <div class="second-content2">
+                    <h1>
+                        SCHEDULE - LIVESCORE TENNIS TODAY</h1>
+
+                    <div>
+                        <img src="images/WTA-Tennis-Live-Scores-1.webp">
+                    </div>
+                </div>
+                <div class="second-content1">
+                    <iframe width="894" height="503" src="https://www.youtube.com/embed/CGRzfUccmNE"
+                        title="The Best Game Ever? Murray v Federer" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>>
+                </div>
+            </div>
+
+
+            <div class="subcontents">
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/eba8ca0d6e.jpg">
+                        </div>
+                        <h5 style="background-color:dodgerblue;color:white;display: inline-block;">NOVAK DJOKOVIC</h5>
+                        <h2>The case of Djokovic wanting to attend the US Open continues to heat up: Send a letter to
+                            the US President</h2>
+                    </div>
+                </div>
+
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/0_gettyimages-1241739158-594x594.jpg">
+                        </div>
+                        <h5 style="background-color:dodgerblue;color:white;display: inline-block;">NOVAK DJOKOVIC</h5>
+                        <h2>"Bad boy" Kyrgios shocked statement: Only tired of Novak Djokovic</h2>
+                    </div>
+                </div>
+
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/1658831182-626-thumbnail-width740height495_anh_cat_3_2.jpg">
+                        </div>
+                        <h5 style="background-color:dodgerblue;color:white;display: inline-block;">NOVAK DJOKOVIC</h5>
+                        <h2>Novak Djokovic easily missed another Grand Slam, an "unfair" year with the former No</h2>
+                    </div>
+                </div>
+
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/10-495-1659412237-450-width740height495.jpg">
+                        </div>
+                        <h5 style="background-color:darkcyan;color:white;display: inline-block;">Citi Open</h5>
+                        <h2>Hottest in sports at noon on August 2: Venus Williams soon leaves the Citi Open</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 style="background-color:crimson;color:white;padding:10px;;">TOP PLAYERS</h1>
+            <div class="father-containers">
+                <div class="containers">
+                    <div class="container">
+                        <div class="slider">
+                            <figure class="slider-picture c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                                <img
+                                    src="images/Nadal-mo-ta-chi-tiet-ve-tuong-lai-Khong-co-gi-la-khong-the-xay-ra-nadal-14--1658484768-194-width740height370.jpg">
+                                <figcaption class="c4-fade-up">
+                                    <h3>
+                                        RAFEAL NADAL
+                                    </h3>
+
+                            </figure>
+
+                            <figure class=" slider-picture c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                                <img src="images/Stan_Wawrinka_11042022.jpg">
+                                <figcaption class="c4-fade-up">
+                                    <h3>
+                                        STAN WAWRINKA
+                                    </h3>
+
+                            </figure>
+                            <figure class=" slider-picture c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                                <img
+                                    src="images/Novak-Djokovic-de-lo-them-1-Grand-Slam-1-nam-novak-djokovic-dung-dau-danh-sach-nhung-ngoi-sao-q-1658832316-197-width740height408.jpg">
+                                <figcaption class="c4-fade-up">
+                                    <h3>
+                                        NOVAK DJOKONIC
+                                    </h3>
+
+                            </figure>
+                            <figure class=" slider-picture c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                                <img src="images/M2QMLL5PXBHIRBA4VSUT7KQILA.jpg">
+                                <figcaption class="c4-fade-up">
+                                    <h3>
+                                        FEDERER
+                                    </h3>
+
+                            </figure>
+                            <figure class="slider-picture c4-izmir c4-border-center c4-image-zoom-in c4-gradient-top">
+                                <img src="images/zverev_ryan.jpg">
+                                <figcaption class="c4-fade-up">
+                                    <h3>
+                                        ZVEREV RYAN
+                                    </h3>
+
+                            </figure>
+
+                        </div>
+
+                    </div>
+                    <div class="btns">
+                        <button class="btn1"></button>
+                        <button class="btn2"></button>
+                        <button class="btn3"></button>
+                        <button class="btn4"></button>
+                        <button class="btn5"></button>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div id="othersports" class="tab-item">
+            <div class="first-contents">
+                <div class="first-content">
+                    <div class="first-content-info">
+                        <p style="color:red"><i class="fa-solid fa-bolt"></i>NEW</p>
+                        <h1>What a Rugby Tournament Says About Hong Kong’s Fate as a Financial Center</h1>
+                        <p>For every spring weekend, downtown Hong Kong's streets turn into noisy parties. chance. The
+                            city's iconicrugby sevens tournamentrugbysevens rugby formatis a surprisingly fast and short
+                            format game that emphasizes speed, risk-taking and agility</p>
+
+                    </div>
+                    <div class="first-content-pic">
+                        <div>
+                            <img src="images/dfe1ede382867621dc13283f269267d6.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="third-contents">
+                <div class="third-content ">
+                    <div class="third-content-picture">
+                        <div>
+                            <img src="images/skysports-hinako-shibuno-golf_5854436.jpg">
+                        </div>
+                    </div>
+                    <h1>AIG Women's Open LIVE!</h1>
+                </div>
+                <div class="third-content">
+                    <div class="third-content-picture">
+                        <div>
+                            <img src="images/image.jpg">
+                        </div>
+                    </div>
+                    <h1>Jack Catterall signs multi-fight deal with BOXXER</h1>
+                </div>
+                <div class="third-content">
+                    <div class="third-content-picture">
+                        <div>
+                            <img src="images/skysports-galway-meath-camogie_5854115.jpg">
+                        </div>
+                    </div>
+                    <h1>Galway Camogie star Lisa Casserly says women's sports are riding the crest of a wave</h1>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="second-contents">
+
+                <div style="margin:20px" class="second-content2">
+                    <h1>Vietnam women's rattan team is world champion</h1>
+
+                    <div>
+                        <img src="images/0ac216c6e0.jpg">
+                    </div>
+                </div>
+                <div class="second-content1">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/LVm0XFw-kGw"
+                        title="Tuyển Cầu Mây Nữ Việt Nam Vô Địch Thế Giới | Chuyện Gì Thế?" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subcontents">
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/fzbwgttaiaa-feo-1659428309-6058-1659428664.jpg">
+                        </div>
+                        <h5 style="background-color:aqua;color:white;display: inline-block;">The female referee was hit
+                            by a super heavy boxer</h5>
+                        <h2>The female referee accidentally punched in the face while operating the super heavyweight
+                            boxing</h2>
+                    </div>
+                </div>
+
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/thien-ngan-jpeg-1659363817-165-4946-4664-1659364036.jpg">
+                        </div>
+                        <h5 style="background-color:aqua;color:white;display: inline-block;">Vietnam beat Chile in Chess
+                            Olympiad</h5>
+                        <h2>Vo Thi Kim Phung, Hoang Thi Bao Tram and Bach Ngoc Thuy Duong together helped Vietnam beat
+                            Chile</h2>
+                    </div>
+                </div>
+
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/1659393282440-1659410335-6400-1659410527.jpg">
+                        </div>
+                        <h5 style="background-color:aqua;color:white;display: inline-block;">The female kart runs over
+                            the opponent</h5>
+                        <h2> The Commonwealth Games 2022 cycling event recorded more incidents </h2>
+                    </div>
+                </div>
+
+                <div class="subcontent">
+                    <div>
+                        <div>
+                            <img src="images/fzb0-llxwaef17f-1659411406-165-7491-7401-1659411478.jpg">
+                        </div>
+                        <h5 style="background-color:chartreuse;color:white;display: inline-block;">Finau hits memorable
+                            milestone on PGA Tour</h5>
+                        <h2>
+                            When winning Rocket Mortgage Classic 2022, Tony Finau reached a new milestone</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="list-news-ads">
+            <div class="list-news wow animate__bounceInLeft">
+                <h1 style="margin-left:10px;background-color: deeppink;">MORE IN <span
+                        style="color:orange;">SPORTS</span></h1>
+                <div class="list-new">
+                    <div class="pic-list-news">
+                        <div>
+                            <img
+                                src="images/106638459-1596048209348-gettyimages-1257852034-rlc22349_2020072350158321.jpg">
+                        </div>
+                    </div>
+                    <div class="info-list-news">
+                        <h2>Dr. Anthony Fauci Baseball Card Sells Out, Setting Records</h2>
+                        <p>A limited-edition card featuring Dr. Anthony Fauci throwing the MLB's opening pitch has sold
+                            out
+                            at more than 51,000</p>
+                        <p style="font-weight:bolder">By Jasmine Aguilera, <span class="day"></span></p>
+                    </div>
+                </div>
+                <div class="list-new">
+                    <div class="pic-list-news">
+                        <div>
+                            <img src="images/donald-trump-9-11.jpg">
+                        </div>
+                    </div>
+                    <div class="info-list-news">
+                        <h2>Trump Says 'Nobody Has Gotten to the Bottom of 9/11' Ahead of Hosting Saudi-Backed LIV Golf
+                            Tournament</h2>
+                        <p> The Who song "I Can't Explain" blared over the loudspeakers at Trump National Golf Club in
+                            Bedminster, N.J., on Thursday morning. It was a fitting selection, under the circumstances.
+                            Not
+                            all that long ago</p>
+                        <p style="font-weight:bolder"> By Sean Gregory/Bedminster N.J, <span class="day"> </span></p>
+                    </div>
+                </div>
+
+                <div class="list-new">
+                    <div class="pic-list-news">
+                        <div>
+                            <img src="images/cc1c362847e19644ff07ffe37e621937.jpg">
+                        </div>
+                    </div>
+                    <div class="info-list-news">
+                        <h2>A Long Talk With Derek Jeter</h2>
+                        <p>
+                            ESPN's new docuseries 'The Captain' is more than hagiography</p>
+                        <p style="font-weight:bolder"> By Sean Gregory, <span class="day"></span></p>
+                    </div>
+                </div>
+
+
+
+                <div style="margin-left:30rem" class="load-more">
+                    <button id="load-more"
+                        style="padding:10px;border-radius:10px;color:white;background-color:coral;">LOAD
+                        MORE ARTICLES <i class="fa-solid fa-angles-down"></i></button>
+                    <button id="load-less"
+                        style="padding:10px;border-radius:10px;color:white;background-color:coral;">LOAD
+                        LESS ARTICLES <i class="fa-solid fa-angles-up"></i></button>
+                </div>
+
+                <div id="load-item">
+                    <div class="list-new">
+                        <div class="pic-list-news">
+                            <div>
+                                <img src="images/1200x-1.jpg">
+                            </div>
+                        </div>
+                        <div class="info-list-news">
+                            <h2>Japan's 'Ice Prince' Yuzuru Hanyu Retires From Complete Competition</h2>
+                            <p>The 27-year-old skater said at a news conference Tuesday in Tokyo that he would no longer
+                                compete </p>
+                            <p style="font-weight:bolder"> By Mia Glass / Bloomberg, <span class="day"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="list-new">
+                        <div class="pic-list-news">
+                            <div>
+                                <img src="images/mo-farah-uk-olympian-trafficked-as-a-child.webp">
+                            </div>
+                        </div>
+                        <div class="info-list-news">
+                            <h2>U.K. Olympian Mo Farah Reveals He Was Trafficked As a Child </h2>
+                            <p>Four-time Olympic champion Mo Farah says he was illegally brought to the U.K. as a young
+                                boy
+                                before he escaped a life of servitude. </p>
+                            <p style="font-weight:bolder"> By Danica Kirka / AP, <span class="day"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="list-new">
+                        <div class="pic-list-news">
+                            <div>
+                                <img src="images/M2QMLL5PXBHIRBA4VSUT7KQILA.jpg">
+                            </div>
+                        </div>
+                        <div class="info-list-news">
+                            <h2>Novak Djokobic Beats Nick Kyrgios To Win Wimbledon</h2>
+                            <p>Kyrgios put up a fight, before losing his cool </p>
+                            <p style="font-weight:bolder"> By Sean Gregory, <span class="day"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="quangcao">
+                <h3 style="margin-top:5rem;border-bottom: 2px solid gray;">Advertisement</h3>
+                <div>
+                    <img src="images/dLXc6LmTZTtw.jpg">
+                </div>
+                <div>
+                    <img src="images/voucher-bat-ngo-Shopee-8.8.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class=ads>
+            <div class="ads-picture">
+                <img src="images/ads2.png">
+            </div>
+            <section>
+
+                <div class="about-us">
+
+                    <h2>About Us</h2>
+                    <p>We use world-class data and technology to publish independent reporting, rankings, journalism and
+                        advice that has earned the trust of our readers and users for nearly 90 years. Our platforms on
+                        KHANHUY.com include Education, Health, Money, Travel, Cars, News and 360 Reviews.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#"><i class="fa-solid fa-rss"></i></a>
+                    </div>
+                </div>
+                <div class="meet-us">
+                    <h2>MEET US</h2>
+                    <p><i class="fa-solid fa-phone"></i> (+84 58) 58 47 007</p>
+                    <p><i class="fa-solid fa-envelope"></i> newspaper@khanhhuy.us</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Manhattan, NY 10036 US </p>
+                </div>
+
+                <div class="subcribe">
+                    <h2>Subscribe to KHANHUY NEWS</h2>
+                    <p>Enter your email address to subscribe to this news and receive notifications from us </p>
+                    <form id="form" action="#">
+                        <input type="email" placeholder="Email Address" id="email">
+                        <button onclick="checkMail()" type="button" class="footer-button">Subscribe</button>
+                        <span style="display:block;text-align: center;" id="text"></span>
+                    </form>
+                </div>
+            </section>
+
+
+        </div>
+
+        <div class="logins">
+            <div class="login">
+                <h2>Member login</h2>
+                <button style="width:20px;position: absolute;right:2rem;top:1rem;background-color: red; height: 20px;"
+                    class="exit"><i class="fa-solid fa-x"></i></button>
+                <input type="text" placeholder="user-name" id="user-name">
+                <input type="password" placeholder="password">
+                <button id="enter">Login</button>
+                <p id="thongbao" style="color:green">Login Successfully <i class="fa-solid fa-circle-check"></i></p>
+            </div>
+        </div>
+
+
+        <footer>
+            <h2>Explore the KHANHUY</h2>
+            <div class="footer-content">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Future</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Culture</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">TV</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Reel</a></li>
+                    <li><a href="#">Weather</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Worklife</a></li>
+                    <li><a href="#">Sounds</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Tech</a></li>
+                </ul>
+            </div>
+            <div class="terms">
+                <p>Terms of Use</p>
+                <p>About the us</p>
+                <p>Privacy Policy</p>
+                <p>Cookies</p>
+                <p>Accessibility</p>
+                <p>Parental Guidance</p>
+                <p>Emails for you</p>
+            </div>
+            <p>Copyright © 2022 KHANHUY. The KHANHUY NEWS is not responsible for the content of external sites. Read
+                about our approach to external linking.</p>
+        </footer>
+
+    </section>
+    <script src="js/sport.js"></script>
+</body>
+
+</html>

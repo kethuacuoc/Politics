@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/Politics.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>KHANHUY POLITICS</title>
+    <link href="images/logo.png" rel="shortcut icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css" rel="stylesheet">
+</head>
+
+<body onload="init()">
+    <div class="loading">
+        <div class="circle-loading"></div>
+    </div>
+    <header>
+        <div>
+            <img src="images/logo.png">
+        </div>
+        <div class="search-boxes">
+            <div class="box">
+
+                <input list="list" id="search" class="input" type="text" placeholder="Search something">
+                <a style="color:black;"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <ul id="list"></ul>
+        </div>
+        <div class="weather-forecast">
+            <ul>
+                <li>NEW YORK CITY</li>
+                <li class="animate__animated animate__flash animate__infinite animate__slower 5s"><i
+                        class="fa-solid fa-cloud-showers-water"></i></li>
+                <li> 25<sup>oC</sup></li>
+                <li id="dayTime" class="day"></li>
+            </ul>
+        </div>
+    </header>
+    <div>
+        <a href="javascript:," id="gototop"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+    <div class="main">
+        <div class="content1">
+            <div
+                style="padding-left:20px;font-weight:600;border-top: 1px solid gray; border-bottom: 1px solid gray; height: 3rem;">
+                <p><i style="color:red;" class="fa-solid fa-circle-notch"></i> QUICK POPS</p>
+            </div>
+            <div class="inside-content">
+                <p>Italy needs me: Berlusconi stages his comeback</p>
+            </div>
+            <div class="inside-content">
+                <p>Brittney Griner appeals her Russian prison sentence</p>
+            </div>
+            <div class="inside-content">
+                <p>Heat is not an equal-opportunity killer</p>
+            </div>
+            <div class="inside-content">
+                <p>LA district attorney recall fails to qualify for ballot</p>
+            </div>
+            <div style="height:4rem;border: none;" class="inside-content">
+                <p></p>
+            </div>
+            <div class="inside-content">
+                <p>Was Iran behind the Rushdie attack ?</p>
+            </div>
+            <div class="inside-content">
+                <p>Defense Secretary Austin tests positive for Covid</p>
+            </div>
+            <div class="inside-content">
+                <p>Biden's studen loan waiting game drags on</p>
+            </div>
+            <div class="inside-content">
+                <p>Mokeypox case appear to be slowing but still rising in New York</p>
+            </div>
+            <div class="inside-content">
+                <p>Buying an electric vehicle? Might want to pay up fast.</p>
+            </div>
+            <div class="inside-content">
+                <p>DeSantis slams FBI search while stumping for the GOP</p>
+            </div>
+            <div class="inside-content">
+                <p>Welcome tp Europe's inflation hot spot</p>
+            </div>
+            <div class="inside-content">
+                <p>Europe on course for new wildfire</p>
+            </div>
+            <div style="width:100%" class="inside-content">
+                <p>Italy needs me: Berlusconi stages his comeback</p>
+            </div>
+            <div style="text-align:center;font-weight:600; border-bottom: 1px solid gray; height: 3rem;">
+                <p><i style="color:red;" class="fa-solid fa-circle-notch"></i> INTERACTIVES</p>
+            </div>
+            <div class="inside-content">
+                <div style="width:100%;margin:0 auto">
+                    <img style="width:100%" src="images/download.png">
+                </div>
+                <p>Italy needs me: Berlusconi stages his comeback</p>
+            </div>
+            <div class="inside-content">
+                <div style="width:100%;margin:0 auto">
+                    <img style="width:100%" src="images/dLXc6LmTZTtw.jpg">
+                </div>
+            </div>
+            <div class="inside-content">
+                <p style="margin:auto 0;border-bottom: 1px solid gray;"><i class="fa-solid fa-video"></i> VIDEO</p>
+                <div class="videos">
+                    <div class="video">
+                        <div class="video-picture">
+                            <div>
+                                <img src="images/live-blog-climate-tax-deal-vote-header-4pm-videoSixteenByNine3000.jpg">
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <p><i class="fa-solid fa-play"></i> House passes climate tax and health care bill</p>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="video-picture">
+                            <div>
+                                <img src="images//cbf4aec0-7785-4fdc-9839-d23d949005c5.jpg">
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <p><i class="fa-solid fa-play"></i> Stefanik calss FBI search of Mar-a-Lago 'complete abuse
+                                and overreach of its authority</p>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="video-picture">
+                            <div>
+                                <img src="images/2100.jpg">
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <p><i class="fa-solid fa-play"></i> 'I'm so lucky': Fetterman returns to campaign trail in
+                                Erie, Pa.</p>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="video-picture">
+                            <div>
+                                <img src="images/OCJREK54WVBIPNMTNAKXZACDLI.jpg">
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <p><i class="fa-solid fa-play"></i> 'I will not stand by silently': Garland defends FBI, DOJ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inside-content">
+                <div style="width:100%;margin:0 auto">
+                    <img style="width:100%" src="images/ada42ddf1c6fdb866f049ddd2c17741f.jpg">
+                </div>
+            </div>
+            <div class="inside-content">
+                <div class="datgidays">
+                    <div class="datgiaday-item">
+                        <div>
+                            <img src="images/013c4eb1b7013e37d14fce96320f1686.jpg">
+                        </div>
+                        <h3 style="font-weight:700;margin:10px 0;;">Kemp fights subpoena from Atlanta-area Trump probe
+                            after talks break down</h3>
+                        <p class="by">BY <span class="name">KAYLE CHENEY</span></p>
+                    </div>
+                    <div class="datgiaday-item">
+                        <div>
+                            <img src="images/download (61)_1.jpg">
+                        </div>
+                        <h3 style="font-weight:700;margin:10px 0;;">Dems mount $10M ad campaign to sell landmark law —
+                            and skirt a November wipeout</h3>
+                        <p class="by">BY <span class="name">ELENA SCHNEIDER</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content2s">
+            <div style="font-weight:600;border-top: 1px solid gray; border-bottom: 1px solid gray; height: 100%;">
+                <p style="margin-left:2rem"><i style="color:red;" class="fa-solid fa-circle-notch"></i> TOP NEWS</p>
+                <div class="content2">
+                    <div class="content2-1">
+                        <div class="content2-1-item">
+
+                            <h3 style="color:red;font-weight:700;text-align: center;margin-bottom: 0;">MAGAZINE</h3>
+                            <h1 style="font-weight:900;font-size:3rem;text-align:center;margin-top: 0;">Trump Steamrolls
+                                His Way Past Accountability. The Mar-a-Lago Search Might Be Different.</h1>
+                            <p style="color:gray;font-size:larger;text-align:center;font-weight:400;">Donal Trump's
+                                signature strategy for getting ahead of scandals, ignoring inconvenient facts and
+                                hammering his own version of events has served him well, but it might not have him this
+                                time</p>
+                            <p style="color:gray;text-align:center;font-size:12px;font-weight:600">BY GWENDA BLAIR</p>
+                            <div>
+                                <img src="images//trump.jpg">
+                            </div>
+                        </div>
+                        <div class="content2-1-item">
+                            <h3 style="font-weight:800;font-size:20px;margin:0">DOJ says release of Mar-a-Lago affidavit
+                                would harm ongoing criminal probe</h3>
+                            <p class="by">BY <span class="name">KAYLE CHENEY</span></p>
+                        </div>
+                        <div class="content2-1-item subcontent">
+                            <div class="sub-content1">
+                                <div>
+                                    <img src="images/2.jpg">
+                                </div>
+                                <h3 style="font-weight:800">Why Donald Trump's declassification claim might not be that
+                                    outlandish</h3>
+                                <p class="noidung">The Scooter Libby case under George W. Bush showed that presidents
+                                    can declassify materials without a clear paper trail</p>
+                                <p class="by">BY <span class="name">JOSH GERSTEIN & KYLE CHENEY</span></p>
+                            </div>
+                            <div class="sub-content2">
+                                <div class="content1-content">
+                                    <h3 style="font-weight:800;font-size:20px;margin:0">Trump world's shifting narrative
+                                        on the Mar-a-Lago docs</h3>
+                                    <p class="noidung"></p>
+                                    <p class="by">BY <span class="name">MYAH WARD</span></p>
+                                </div>
+                                <div class="content1-content">
+                                    <h3 style="font-weight:800;font-size:20px;margin:0">Trump world's shifting narrative
+                                        on the Mar-a-Lago docs</h3>
+                                    <p class="noidung">The former president had been looking to go to his Scotland
+                                        resorts, though preparations had yet yo be finalized</p>
+                                    <p class="by">BY <span class="name">MERIDITH MCGRAW</span></p>
+                                </div>
+                                <div class="content1-content">
+                                    <h3 style="font-weight:800;font-size:20px;margin:0">Trump world's shifting narrative
+                                        on the Mar-a-Lago docs</h3>
+                                    <p class="noidung">DA is strongly considering bringing charges agains Giuliani</p>
+                                    <p class="by">BY <span class="name">KAYLE CHENEY</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content2-2">
+                        <div class="content2-2-item">
+                            <div>
+                                <img src="images/1.jpg">
+                            </div>
+                            <h5 class="minititle">ELECTIONS</h5>
+                            <h3 style="font-weight:800">A new powerful signal that Dems' midterm hopes aren't lost</h3>
+                            <p class="by">BY <span class="name">JESSICA PIPER</span></p>
+                        </div>
+                        <div class="content2-2-item">
+                            <h5 class="minititle"></h5>
+                            <h3 style="font-weight:800">Two wings of the GOP confront their political futures in
+                                Tuesday's primaries</h3>
+                            <p class="by">BY <span class="name">ZACH MONTELLARD</span></p>
+                        </div>
+                        <div class="content2-2-item">
+                            <h5 class="minititle">TAX</h5>
+                            <h3 style="font-weight:800">The $80 billion question: What will the IRS do with all its new
+                                money?</h3>
+                            <p class="noidung">The Biden administration has lots of priorities for ramping up IRS
+                                operations, while Republicans paint a dark picture of an agency run amok</p>
+                            <p class="by">BY <span class="name">BRIAN FALER</span></p>
+                        </div>
+                        <div class="content2-2-item">
+                            <div>
+                                <img src="images/CONGRESSMITSO1.jpg">
+                            </div>
+                            <h5 class="minititle">CONGRESS MINUTES</h5>
+                            <h3 style="font-weight:800">Confident McCarthy predicts Cheney loss, calling it a
+                                'referendum' on Jan. 6 panel</h3>
+                            <p class="noidung">Kevin McCarthy also said he'd be House speaker come next January</p>
+                            <p class="by">BY <span class="name">JESSICA PIPER</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="content2-1">
+                        <h3
+                            style="text-align:center;color:red;border-bottom:1px solid gray;border-top:1px solid gray;font-size: 15px;">
+                            <i class="fa-solid fa-o"></i> HOT TOPICS</h3>
+                        <div style="border-bottom:1px solid gray" class="content2-1-item subcontent">
+                            <div class="sub-content1">
+                                <div>
+                                    <img src="images/www.politico.jpg">
+                                </div>
+                                <h5 class="minititle">POLITICS</h5>
+
+                                <h3 style="font-weight:800">Conservative nonprofit plans to spend milions bashing 'woke'
+                                    left in midterms</h3>
+                                <p class="by">BY <span class="name">ALEX ISENSTADT</span></p>
+                            </div>
+                            <div class="sub-content2">
+                                <div class="content1-content">
+                                    <h5 style="margin-top:0" class="minititle">HEALTH CARE</h5>
+                                    <h3 style="font-weight:800">How are abortion laws affecting your access to health
+                                        care? What we want to hear from you.</h3>
+                                    <p class="by">BY <span class="name">ERIN SMITH, ALICE MIRANDA OLLSTEIN AND MEGAN
+                                            MESSERLY</span></p>
+                                </div>
+                                <div class="content1-content">
+                                    <h5 class="minititle">AGRICULTURE</h5>
+                                    <h3 style="font-weight:800">The world food crisis is about to get worse </h3>
+                                    <p class="noidung">Millions are facing starvation as war combines with financial and
+                                        climate-driven shocks</p>
+                                    <p class="by">BY <span class="name">EDIE ROCKS</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="threepicture">
+                            <div class="threepicture-item">
+                                <div>
+                                    <img src="images/tải xuống.jfif">
+                                </div>
+                                <h5 class="minititle">RUSSIA’S WAR ON UKRAINE</h5>
+                                <h3 style="font-weight:800">'The biggest movement': Ukraine evacuates the front line</h3>
+                                <p class="by">BY <span class="name">LILY HYDE</span></p>
+                            </div>
+                            <div class="threepicture-item">
+                                <div>
+                                    <img src="images/1cdd5a5e9a95f4a10ffc260a436113f1.jpg">
+                                </div>
+                                <h5 class="minititle">ELECTIONS</h5>
+                                <h3 style="font-weight:800">GOP slashes ads in key Senate battlegrounds</h3>
+                                <p class="by">BY <span class="name">CORBIN HIAR AND BENJAMIN STORROW</span></p>
+                            </div>
+                            <div class="threepicture-item">
+                                <div>
+                                    <img src="images/e5c54d13c4e53658aea5f226276a6f86.jpg">
+                                </div>
+                                <h5 class="minititle">CYBERSECURITY</h5>
+                                <h3 style="font-weight:800">'Hackers against conspiracies': Cyber sleuths take aim at
+                                    election disinformation</h3>
+                                <p class="by">BY <span class="name">MAGGIE MILLER</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content2-2">
+                        <h3
+                            style="text-align:center;color:red;border-bottom:1px solid gray;border-top:1px solid gray;font-size: 15px;">
+                            <i class="fa-solid fa-o"></i> VIDEO</h3>
+
+                        <div class="content2-2-item">
+
+                            <iframe width="100%" height="394" src="https://www.youtube.com/embed/IiRubAMgzAs"
+                                title="Armed Trump supporters gather outside vote count centre in Arizona"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <h3 style="font-weight:800">Armed Trump supporters gather at Phoenix FBI office</h3>
+                        </div>
+                        <div class="content2-2-item">
+                            <div>
+                                <img src="images/dLXc6LmTZTtw.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="border-left: 1px solid gray;border-bottom: 1px solid gray;
+        " class="content2">
+                    <div class="content2-1">
+                        <p
+                            style="text-align:center;color:red;border-bottom:1px solid gray;border-top:1px solid gray;font-size: 15px;">
+                            <i class="fa-solid fa-o"></i> LEGAL</p>
+
+
+                        <div class="another-content">
+                            <div>
+                                <img src="images/31831372332558e9b39470f911099edc.jpg">
+                            </div>
+                            <h1>Judge orders Graham to testify in Atlanta-area Trump probe</h1>
+                            <p class="noidung">The Scooter Libby case under George W. Bush showed that presidents can
+                                declassify materials without a clear paper trail</p>
+                            <p class="by">BY <span class="name">KYLE, NICHOLAS WU & JOSH GERSTEIN</span></p>
+
+
+                        </div>
+                        <div class="kobitdatgis">
+                            <div class="kobitdatgi-item">
+                                <div class="kobitdatgi-item1">
+                                    <div>
+                                        <img src="images/3000.jpg">
+                                    </div>
+                                </div>
+                                <div class="kobitdatgi-item2">
+                                    <h2>Justice Department subpoenas Trump White House lawyer Eric Herschmann</h2>
+                                    <p class="by">BY <span class="name">BETSY WOODRUFF SWAN</span></p>
+                                </div>
+                            </div>
+
+                            <div class="kobitdatgi-item">
+                                <div class="kobitdatgi-item1">
+                                    <div>
+                                        <img src="images/0x0.jpg">
+                                    </div>
+                                </div>
+                                <div class="kobitdatgi-item2">
+                                    <h2>FBI search warrant shows Trump under investigation for potential obstruction of
+                                        justice, Espionage Act violations</h2>
+                                    <p class="by">BY <span class="name">BETSY WOODRUFF SWAN, KYLE CHENEY AND NICHOLAS
+                                            WU</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content2-2">
+                        <p
+                            style="text-align:center;color:red;border-bottom:1px solid gray;border-top:1px solid gray;font-size: 15px;">
+                            <i class="fa-solid fa-o"></i> MOST READ</p>
+
+                        <div class="content2-2-item">
+                            <div class="numbers-content">
+                                <p class="numbers">1</p>
+                                <p>Justice Department subpoenas Trump White House lawyer Eric Herschmann</p>
+                            </div>
+                            <div class="numbers-content">
+                                <p class="numbers">2</p>
+                                <p>Judge orders Graham to testify in Atlanta-area Trump probe</p>
+                            </div>
+                            <div class="numbers-content">
+                                <p class="numbers">3</p>
+                                <p>Larry Summers emerges as the unlikeliest Democratic hero</p>
+                            </div>
+                            <div class="numbers-content">
+                                <p class="numbers">4</p>
+                                <p>Why Donald Trump's declassification claim might not be that outlandish</p>
+                            </div>
+                            <div class="numbers-content">
+                                <p class="numbers">5</p>
+                                <p>Cheney's next mission: Keeping her anti-Trump megaphone</p>
+                            </div>
+                        </div>
+                        <div class="content2-2-item">
+                            <div>
+                                <img src="images/lazpd88-1024x1024.jpg">
+                            </div>
+                        </div>
+                        <div class="content2-2-item">
+                            <div>
+                                <img src="images//1628223276037_540.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>Explore the KHANHUY</h2>
+        <div class="footer-content">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Future</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Culture</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">TV</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Reel</a></li>
+                <li><a href="#">Weather</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Worklife</a></li>
+                <li><a href="#">Sounds</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Tech</a></li>
+            </ul>
+        </div>
+        <div class="terms">
+            <p>Terms of Use</p>
+            <p>About the us</p>
+            <p>Privacy Policy</p>
+            <p>Cookies</p>
+            <p>Accessibility</p>
+            <p>Parental Guidance</p>
+            <p>Emails for you</p>
+        </div>
+        <p>Copyright © 2022 KHANHUY. The KHANHUY NEWS is not responsible for the content of external sites. Read about
+            our approach to external linking.</p>
+    </footer>
+    <script src="js/Politics.js"></script>
+</body>
+</html>
